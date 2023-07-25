@@ -1,0 +1,38 @@
+<html><body><pre><strong>Warnings:
+</strong>    TOTAL: 14 warning(s)
+    <strong>Priority 1</strong>: 2 warning(s)
+    <strong>Priority 2</strong>: 5 warning(s)
+
+<strong>Priority 1 - heavy impact expected:
+</strong><strong>*</strong>   * [LABELS - TEST NORMALITY]
+  The label distribution failed to pass a normality test as-is and following a
+  battery of transforms.
+  It is possible that the data originates from an exotic distribution, there is
+  heavy outlier presence or it is multimodal. Addressing this issue might prove
+  critical for regressor performance.
+<strong>*</strong>   * [DUPLICATES - DUPLICATE COLUMNS] Found 1 columns with exactly the same
+  feature values as other columns.
+
+<strong>Priority 2 - usage allowed, limited human intelligibility:
+</strong><strong>*</strong>   * [DATA RELATIONS - HIGH COLLINEARITY - NUMERICAL] Found 4 numerical variables
+  with high Variance Inflation Factor (VIF>5.0). The variables listed in results
+  are highly collinear with other variables in the dataset. These will make
+  model explainability harder and potentially give way to issues like
+  overfitting.Depending on your end goal you might want to remove the highest
+  VIF variables.
+<strong>*</strong>   * [DATA RELATIONS - HIGH COLLINEARITY - CATEGORICAL] Found 3 categorical
+  variables with significant collinearity (p-value < 0.05). The variables listed
+  in results are highly collinear with other variables in the dataset and sorted
+  descending according to propensity. These will make model explainability
+  harder and potentially give way to issues like overfitting.Depending on your
+  end goal you might want to remove variables following the provided order.
+<strong>*</strong>   * [LABELS - OUTLIER DETECTION]
+  Found 2 potential outliers across the full dataset.                     A
+  distance bigger than 3.0 standard deviations of intra-cluster distances
+  to the respective centroids was used to define the potential outliers.
+<strong>*</strong>   * [BIAS&FAIRNESS - PROXY IDENTIFICATION] Found 5 feature pairs of correlation
+  to sensitive attributes with values higher than defined threshold (0.5).
+<strong>*</strong>   * [DUPLICATES - EXACT DUPLICATES] Found 20 instances with exact duplicate
+  feature values.
+
+</pre></body></html>
